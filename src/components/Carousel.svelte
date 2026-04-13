@@ -55,7 +55,7 @@
     <button
       onclick={prev}
       class={`absolute left-2 top-1/2 -translate-y-1/2 z-10 p-1.5 bg-black/50 text-white rounded-full ${onlyOneSlide ? "hidden" : ""} ${
-        !canScrollPrev ? "opacity-50 !cursor-not-allowed" : ""
+        !canScrollPrev ? "opacity-50 cursor-not-allowed" : ""
       }`}
       {...a11y}
     >

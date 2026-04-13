@@ -13,7 +13,7 @@
       ],
     },
     {
-      name: "Unstable Music Pack",
+      name: "Unstable Music",
       description: "This resource pack adds popular Unstable Universe music to the game!",
       link: "https://modrinth.com/resourcepack/unstable-music",
       slides: [
@@ -47,17 +47,17 @@
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 mx-10">
     {#each mods as mod}
       <div
-        class="border border-blue-900 rounded-xl xl:pb-5 flex xl:flex-col md:flex-row flex-col"
+        class="border border-blue-900 rounded-xl xl:pb-5 flex xl:flex-col lm:flex-row flex-col"
       >
         <Carousel
-          containerClass={"!min-h-auto !min-w-auto xl:w-full md:w-1/2"}
+          containerClass={"!min-h-1/2 !min-w-1/2 xl:w-full lm:w-1/2"}
           slideClass={"!p-0"}
-          imageClass={"rounded-bl-none rounded-t-xl md:rounded-l-xl md:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl w-max"}
+          imageClass={"rounded-bl-none rounded-t-xl lm:rounded-l-xl lm:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl w-max"}
           slides={mod.slides}
           withGrabCursor={false}
         />
         <div class="flex flex-col gap-4 p-5">
-          <a class="text-2xl text-blue-900 font-bold" target="_blank" href={mod.link}
+          <a class="text-2xl text-blue-900 hover:text-blue-950 font-bold" target="_blank" href={mod.link}
             >{mod.name}</a
           >
           <p class="text-xl">{mod.description}</p>

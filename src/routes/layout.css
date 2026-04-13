@@ -2,6 +2,10 @@
 @plugin '@tailwindcss/typography';
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --breakpoint-lm: 55rem;
+}
 @font-face {
   font-family: Mojangles;
   src: url("Mojangles.woff") format("woff");
