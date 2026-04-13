@@ -3,57 +3,8 @@
   const mods = [
     {
       name: "Rice",
-      slides: [
-        {
-          src: "riceMod.png",
-          alt: "rice mod cover",
-        },
-        {
-          src: "endermenFarm.png",
-          alt: "rice mod",
-        },
-        {
-          src: "ssmpBacapBase.png",
-          alt: "rice mod",
-        },
-      ],
-    },
-    {
-      name: "Rice",
-      slides: [
-        {
-          src: "riceMod.png",
-          alt: "rice mod cover",
-        },
-        {
-          src: "endermenFarm.png",
-          alt: "rice mod",
-        },
-        {
-          src: "ssmpBacapBase.png",
-          alt: "rice mod",
-        },
-      ],
-    },
-    {
-      name: "Rice",
-      slides: [
-        {
-          src: "riceMod.png",
-          alt: "rice mod cover",
-        },
-        {
-          src: "endermenFarm.png",
-          alt: "rice mod",
-        },
-        {
-          src: "ssmpBacapBase.png",
-          alt: "rice mod",
-        },
-      ],
-    },
-    {
-      name: "Rice",
+      description: "This mod adds rice and rice-related items to the game!",
+      link: "https://modrinth.com/mod/rice-mod",
       slides: [
         {
           src: "riceMod.png",
@@ -82,7 +33,7 @@
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 mx-10">
     {#each mods as mod}
       <div
-        class="border border-sky-800 rounded-xl xl:pb-5 flex xl:flex-col md:flex-row flex-col"
+        class="border border-blue-900 rounded-xl xl:pb-5 flex xl:flex-col md:flex-row flex-col"
       >
         <Carousel
           containerClass={"!min-h-auto !min-w-auto xl:w-full md:w-1/2"}
@@ -90,7 +41,10 @@
           imageClass={"rounded-bl-none rounded-t-xl md:rounded-l-xl md:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl w-max"}
           slides={mod.slides}
         />
-        <h1 class="text-2xl p-5">{mod.name}</h1>
+        <div class="flex flex-col gap-4 p-5">
+          <a class="text-3xl text-blue-900" target="_blank" href={mod.link}>{mod.name}</a>
+          <p class="text-xl">{mod.description}</p>
+        </div>
       </div>
     {/each}
   </div>
