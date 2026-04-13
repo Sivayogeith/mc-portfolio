@@ -10,18 +10,32 @@
           src: "riceMod.png",
           alt: "rice mod cover",
         },
+      ],
+    },
+    {
+      name: "Unstable Music Pack",
+      description: "This resource pack adds popular Unstable Universe music to the game!",
+      link: "https://modrinth.com/resourcepack/unstable-music",
+      slides: [
         {
-          src: "endermenFarm.png",
-          alt: "rice mod",
+          src: "unstableMusicPack.png",
+          alt: "unstable music pack working",
         },
+      ],
+    },
+    {
+      name: "Gobble Felix's Rats",
+      description: "This mod makes cats gobble nearby rats from Felix's rats!",
+      link: "https://modrinth.com/mod/gobble-felixs-rats",
+      slides: [
         {
-          src: "ssmpBacapBase.png",
-          alt: "rice mod",
+          src: "gobbleFelixRatsMod.png",
+          alt: "gobble felixs rats mod works",
         },
       ],
     },
   ];
-</script> 
+</script>
 
 <div class="p-5 mb-10 flex justify-center flex-col">
   <a class="text-3xl text-center" href="/">
@@ -43,7 +57,9 @@
           withGrabCursor={false}
         />
         <div class="flex flex-col gap-4 p-5">
-          <a class="text-3xl text-blue-900" target="_blank" href={mod.link}>{mod.name}</a>
+          <a class="text-2xl text-blue-900 font-bold" target="_blank" href={mod.link}
+            >{mod.name}</a
+          >
           <p class="text-xl">{mod.description}</p>
         </div>
       </div>
