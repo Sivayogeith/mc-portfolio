@@ -1,4 +1,5 @@
 <script>
+import { goto } from '$app/navigation';
 </script>
 
 <div class="flex flex-col justify-center items-center xl:h-screen xl:m-0 my-20">
@@ -14,8 +15,9 @@
       />
       <h1 class="text-2xl p-5">my minecraft builds</h1>
     </div>
-    <div
-      class="rounded-xl border border-sky-800 hover:scale-105 xl:pb-5 flex xl:flex-col md:flex-row flex-col"
+    <button
+      class="rounded-xl border border-sky-800 hover:scale-105 xl:pb-5 flex xl:flex-col md:flex-row flex-col text-start"
+      onclick={() => goto("/mods")}
     >
       <img
         src="/riceMod.png"
@@ -23,7 +25,7 @@
         class="rounded-bl-none rounded-t-xl md:rounded-l-xl md:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl w-max md:w-1/2 xl:w-max"
       />
       <h1 class="text-2xl p-5">my minecraft mods and packs</h1>
-    </div>
+  </button>
     <div
       class="rounded-xl border border-sky-800 hover:scale-105 xl:pb-5 flex xl:flex-col md:flex-row flex-col"
     >
