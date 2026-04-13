@@ -21,7 +21,7 @@
       ],
     },
   ];
-</script>
+</script> 
 
 <div class="p-5 mb-10 flex justify-center flex-col">
   <a class="text-3xl text-center" href="/">
@@ -40,6 +40,7 @@
           slideClass={"!p-0"}
           imageClass={"rounded-bl-none rounded-t-xl md:rounded-l-xl md:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl w-max"}
           slides={mod.slides}
+          withGrabCursor={false}
         />
         <div class="flex flex-col gap-4 p-5">
           <a class="text-3xl text-blue-900" target="_blank" href={mod.link}>{mod.name}</a>
