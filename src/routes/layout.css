@@ -6,3 +6,7 @@
   font-family: Mojangles;
   src: url("Mojangles.woff") format("woff");
 }
+
+.ws-10 {
+  word-spacing: 10px;
+}
