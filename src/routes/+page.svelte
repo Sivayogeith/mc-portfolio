@@ -1,7 +1,11 @@
 <script>
   import { goto } from "$app/navigation";
   const links = [
-    { name: "my builds and bases", image: "/ssmpBacapBase.png", href: "/builds"},
+    {
+      name: "my builds and bases",
+      image: "/ssmpBacapBase.png",
+      href: "/builds",
+    },
     { name: "my mods and packs ", image: "/riceMod.png", href: "/mods" },
     { name: "my favorite farms", image: "/endermenFarm.png", href: "/farms" },
   ];

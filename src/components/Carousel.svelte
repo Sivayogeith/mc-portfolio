@@ -30,9 +30,9 @@
     imageClass?: string;
   }
 
-  let props: Props = $props()
+  let props: Props = $props();
 
-  const onlyOneSlide: boolean = (props.slides !).length < 2;
+  const onlyOneSlide: boolean = props.slides!.length < 2;
 </script>
 
 <Carousel {...props}>

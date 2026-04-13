@@ -14,7 +14,8 @@
     },
     {
       name: "Unstable Music",
-      description: "This resource pack adds popular Unstable Universe music to the game!",
+      description:
+        "This resource pack adds popular Unstable Universe music to the game!",
       link: "https://modrinth.com/resourcepack/unstable-music",
       slides: [
         {
@@ -37,12 +38,7 @@
   ];
 </script>
 
-<div class="p-5 mb-10 flex justify-center flex-col">
-  <a class="text-3xl text-center" href="/">
-    <span class="hover:text-blue-900">sage's minecraft "portfolio"</span></a
-  >
-  <h1 class="text-xl text-center">mods and resource packs</h1>
-</div>
+<h1 class="mb-10 text-xl text-center">mods and resource packs</h1>
 <div class="flex flex-col justify-center items-center m-5">
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 mx-10">
     {#each mods as mod}
@@ -57,8 +53,10 @@
           withGrabCursor={false}
         />
         <div class="flex flex-col gap-4 p-5">
-          <a class="text-2xl text-blue-900 hover:text-blue-950 font-bold" target="_blank" href={mod.link}
-            >{mod.name}</a
+          <a
+            class="text-2xl text-blue-900 hover:text-blue-950 font-bold"
+            target="_blank"
+            href={mod.link}>{mod.name}</a
           >
           <p class="text-xl">{mod.description}</p>
         </div>
