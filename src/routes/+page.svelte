@@ -5,9 +5,20 @@
       name: "my builds and bases",
       image: "/ssmpBacapBase.png",
       href: "/builds",
+      alt: "my builds and bases cover",
     },
-    { name: "my mods and packs ", image: "/riceMod.png", href: "/mods" },
-    { name: "my favorite farms", image: "/endermenFarm.png", href: "/farms" },
+    {
+      name: "my mods and packs ",
+      image: "/riceMod.png",
+      href: "/mods",
+      alt: "my mods and packs cover",
+    },
+    {
+      name: "my favorite farms",
+      image: "/endermenFarm.png",
+      href: "/farms",
+      alt: "my favorite farms cover",
+    },
   ];
 </script>
 
@@ -21,7 +32,7 @@
       >
         <img
           src={link.image}
-          alt="minecraft builds cover"
+          alt={link.alt}
           class="rounded-bl-none rounded-t-xl md:rounded-l-xl md:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl w-max md:w-1/2 xl:w-max"
         />
         <h1 class="text-2xl p-5 ws-10">{link.name}</h1>
