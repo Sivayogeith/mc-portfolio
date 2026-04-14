@@ -38,7 +38,7 @@
   ];
 </script>
 
-<h1 class="mb-10 text-xl text-center">mods and resource packs</h1>
+<h1 class="mb-10 text-xl text-center">my mods and resource packs</h1>
 <div class="flex flex-col justify-center items-center m-5">
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 mx-10">
     {#each mods as mod}
