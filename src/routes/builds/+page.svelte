@@ -36,6 +36,84 @@
         },
       ],
     },
+    {
+      name: "SSMP Main Base 1",
+      description:
+        "This is the first base I ever built in minecraft, in my first server and world.",
+      slides: [
+        {
+          src: "ssmpMainBase.png",
+          alt: "ssmp main base cover",
+        },
+        {
+          src: "ssmpMainBase1.png",
+          alt: "ssmp main base image 1",
+        },
+        {
+          src: "ssmpMainBase2.png",
+          alt: "ssmp main base image 2",
+        },
+        {
+          src: "ssmpMainBase3.png",
+          alt: "ssmp main base image 3",
+        },
+        {
+          src: "ssmpMainBase4.png",
+          alt: "ssmp main base image 4",
+        },
+        {
+          src: "ssmpMainBase5.png",
+          alt: "ssmp main base image 5",
+        },
+        {
+          src: "ssmpMainBase6.png",
+          alt: "ssmp main base image 6",
+        },
+        {
+          src: "ssmpMainBase7.png",
+          alt: "ssmp main base image 7",
+        },
+      ],
+    },
+    {
+      name: "SSMP Main Base 2",
+      description:
+        "This is the second base I built near the server's community trading hall!",
+      slides: [
+        {
+          src: "ssmpMain2Base.png",
+          alt: "ssmp main base cover",
+        },
+        {
+          src: "ssmpMain2Base1.png",
+          alt: "ssmp main base 2 image 1",
+        },
+        {
+          src: "ssmpMain2Base2.png",
+          alt: "ssmp main base 2 image 2",
+        },
+        {
+          src: "ssmpMain2Base3.png",
+          alt: "ssmp main base 2 image 3",
+        },
+        {
+          src: "ssmpMain2Base4.png",
+          alt: "ssmp main base 2 image 4",
+        },
+        {
+          src: "ssmpMain2Base5.png",
+          alt: "ssmp main base 2 image 5",
+        },
+        {
+          src: "ssmpMain2Base6.png",
+          alt: "ssmp main base 2 image 6",
+        },
+        {
+          src: "ssmpMain2Base7.png",
+          alt: "ssmp main base 2 image 7",
+        },
+      ],
+    },
   ];
 </script>
 
