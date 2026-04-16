@@ -8,7 +8,7 @@
 }
 @font-face {
   font-family: Mojangles;
-  src: url("Mojangles.woff") format("woff");
+  src: url("/Mojangles.woff") format("woff");
 }
 
 .ws-10 {
