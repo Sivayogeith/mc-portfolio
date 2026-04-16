@@ -30,7 +30,7 @@
 </svelte:head>
 
 {#if page.url.pathname != "/"}
-  <div class="mt-5 flex justify-center flex-col">
+  <div class="pt-5 flex justify-center flex-col">
     <a class="text-3xl text-center" href="/">
       <span class="hover:text-blue-900">sage's minecraft "portfolio"</span></a
     >

@@ -132,10 +132,10 @@
           withGrabCursor={false}
         />
         <div class="flex flex-col gap-4 p-5">
-          <h1 class="text-2xl text-blue-900 hover:text-blue-950 font-bold">
+          <h1 class="text-xl text-blue-900 hover:text-blue-950 font-bold">
             {build.name}
           </h1>
-          <p class="text-xl">{build.description}</p>
+          <p class="text-lg">{build.description}</p>
         </div>
       </div>
     {/each}

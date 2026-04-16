@@ -104,12 +104,12 @@
         />
         <div class="flex flex-col gap-4 p-5">
           <a
-            class="text-2xl text-blue-900 hover:text-blue-950 font-bold"
+            class="text-xl text-blue-900 hover:text-blue-950 font-bold"
             href={farm.link}
           >
             {farm.name}
           </a>
-          <p class="text-xl">{farm.description}</p>
+          <p class="text-lg">{farm.description}</p>
         </div>
       </div>
     {/each}

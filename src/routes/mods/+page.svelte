@@ -54,11 +54,11 @@
         />
         <div class="flex flex-col gap-4 p-5">
           <a
-            class="text-2xl text-blue-900 hover:text-blue-950 font-bold"
+            class="text-xl text-blue-900 hover:text-blue-950 font-bold"
             target="_blank"
             href={mod.link}>{mod.name}</a
           >
-          <p class="text-xl">{mod.description}</p>
+          <p class="text-lg">{mod.description}</p>
         </div>
       </div>
     {/each}
