@@ -27,7 +27,7 @@
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 mx-10">
     {#each links as link}
       <button
-        class="rounded-xl border border-blue-900 hover:scale-105 xl:pb-5 flex xl:flex-col md:flex-row flex-col text-start"
+        class="rounded-xl border border-blue-900 dark:border-emerald-500 hover:scale-105 xl:pb-5 flex xl:flex-col md:flex-row flex-col text-start"
         onclick={() => goto(link.href)}
       >
         <img

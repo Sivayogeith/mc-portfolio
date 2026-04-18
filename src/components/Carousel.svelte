@@ -42,7 +42,7 @@
 
   {#snippet next({ next, canScrollNext, a11y })}
     <button
-      class={`absolute right-2 top-1/2 -translate-y-1/2 z-10 p-1.5 bg-black/50 text-white rounded-full ${onlyOneSlide ? "hidden" : ""} ${
+      class={`absolute right-2 top-1/2 -translate-y-1/2 z-10 p-1.5 bg-blue-950/50 text-white dark:bg-emerald-200/50 dark:text-black rounded-full ${onlyOneSlide ? "hidden" : ""} ${
         !canScrollNext ? "opacity-50 cursor-not-allowed" : ""
       }`}
       onclick={next}
@@ -54,7 +54,7 @@
   {#snippet prev({ prev, canScrollPrev, a11y })}
     <button
       onclick={prev}
-      class={`absolute left-2 top-1/2 -translate-y-1/2 z-10 p-1.5 bg-black/50 text-white rounded-full ${onlyOneSlide ? "hidden" : ""} ${
+      class={`absolute left-2 top-1/2 -translate-y-1/2 z-10 p-1.5 bg-blue-950/50 text-white dark:bg-emerald-200/50 dark:text-black rounded-full ${onlyOneSlide ? "hidden" : ""} ${
         !canScrollPrev ? "opacity-50 cursor-not-allowed" : ""
       }`}
       {...a11y}

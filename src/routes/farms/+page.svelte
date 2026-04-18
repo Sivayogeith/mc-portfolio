@@ -93,7 +93,7 @@
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 mx-10">
     {#each farms as farm}
       <div
-        class="border border-blue-900 rounded-xl xl:pb-5 flex xl:flex-col lm:flex-row flex-col"
+        class="border border-blue-900 dark:border-emerald-500 rounded-xl xl:pb-5 flex xl:flex-col lm:flex-row flex-col"
       >
         <Carousel
           containerClass={"!min-h-1/2 !min-w-1/2 xl:w-full lm:w-1/2"}
@@ -104,7 +104,7 @@
         />
         <div class="flex flex-col gap-4 p-5">
           <a
-            class="text-xl text-blue-900 hover:text-blue-950 font-bold"
+            class="text-xl text-blue-900 dark:text-emerald-500 hover:text-blue-950 dark:hover:text-emerald-600 font-bold"
             href={farm.link}
           >
             {farm.name}

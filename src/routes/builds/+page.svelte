@@ -122,7 +122,7 @@
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 mx-10">
     {#each builds as build}
       <div
-        class="border border-blue-900 rounded-xl xl:pb-5 flex xl:flex-col lm:flex-row flex-col"
+        class="border border-blue-900 dark:border-emerald-500 rounded-xl xl:pb-5 flex xl:flex-col lm:flex-row flex-col"
       >
         <Carousel
           containerClass={"!min-h-1/2 !min-w-1/2 xl:w-full lm:w-1/2"}
@@ -132,7 +132,7 @@
           withGrabCursor={false}
         />
         <div class="flex flex-col gap-4 p-5">
-          <h1 class="text-xl text-blue-900 hover:text-blue-950 font-bold">
+          <h1 class="text-xl text-blue-900 dark:text-emerald-500 hover:text-blue-950 dark:hover:text-emerald-600 font-bold">
             {build.name}
           </h1>
           <p class="text-lg">{build.description}</p>

@@ -14,7 +14,7 @@
 {#if page.url.pathname != "/"}
   <div class="pt-5 flex justify-center flex-col">
     <a class="text-3xl text-center" href="/">
-      <span class="hover:text-blue-900">sage's minecraft "portfolio"</span></a
+      <span class="hover:text-blue-900 dark:hover:text-emerald-500">sage's minecraft "portfolio"</span></a
     >
   </div>
 {/if}
