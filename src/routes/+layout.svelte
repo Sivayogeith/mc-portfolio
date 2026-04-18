@@ -1,6 +1,6 @@
 <script lang="ts">
   import "./layout.css";
-  import favicon from "$lib/assets/favicon.svg";
+  import favicon from "$lib/assets/favicon.png";
   import { page } from "$app/state";
   import SunIcon from "$lib/SunIcon.svelte";
   import MoonIcon from "$lib/MoonIcon.svelte";
