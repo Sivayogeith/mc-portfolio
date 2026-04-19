@@ -14,3 +14,13 @@
 .ws-10 {
   word-spacing: 10px;
 }
+
+.modal__content {
+  max-width: none !important;
+  width: 95vw !important;
+  height: 90vh !important;  
+}
+
+.close__button {
+  @apply dark:!text-emerald-500 !text-blue-900
+}

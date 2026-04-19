@@ -24,6 +24,8 @@
 		"vite": "^7.3.1"
 	},
 	"dependencies": {
+		"sv-popup": "^0.5.3",
+		"svelte-breakpoints": "^0.3.0",
 		"svelte-light-carousel": "^2.0.1"
 	}
 }

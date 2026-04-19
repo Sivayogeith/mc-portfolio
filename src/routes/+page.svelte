@@ -1,5 +1,9 @@
-<script>
+<script lang="ts">
   import { goto } from "$app/navigation";
+  import { Content, Modal, Trigger } from "sv-popup";
+  import { useMediaQuery } from "svelte-breakpoints";
+  import type { Readable } from "svelte/store";
+  const isDesktop: Readable<boolean> = useMediaQuery("(width >= 80rem)");
   const links = [
     {
       name: "my builds and bases",
@@ -27,7 +31,22 @@
 
 <div class="flex flex-col justify-center items-center xl:h-[93vh] xl:m-0 my-20">
   <h1 class="text-3xl text-center mb-20 sm:mx-5">
-    sage's minecraft "portfolio"
+    sage's
+
+    {#if $isDesktop}
+      <Modal button={true}>
+        <Content>
+          <iframe
+            src="https://classic.minecraft.net/"
+            title="minecraft"
+            frameborder="0"
+            class="h-full w-full border border-black/50 dark:border-white/50 rounded-2xl"
+          ></iframe>
+        </Content>
+        <Trigger>minecraft</Trigger></Modal
+      >{:else}minecraft
+    {/if}
+    "portfolio"
   </h1>
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 sm:mx-10 mx-5">
     {#each links as link}
