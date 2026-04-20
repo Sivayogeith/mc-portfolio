@@ -28,6 +28,7 @@
     containerClass?: string;
     slideClass?: string;
     imageClass?: string;
+    figureClass?: string;
   }
 
   let props: Props = $props();
@@ -37,7 +38,19 @@
 
 <Carousel {...props}>
   {#snippet slide({ slide })}
-    <img src={slide.src} alt={slide.alt} class={props.imageClass} />
+    {#if slide.src.startsWith("https://sketchfab.com")}
+      <iframe
+        title={slide.alt}
+        frameborder="0"
+        allowfullscreen
+        allow="autoplay; fullscreen; xr-spatial-tracking"
+        src={slide.src}
+        class={props.figureClass}
+      >
+      </iframe>
+    {:else}
+      <img src={slide.src} alt={slide.alt} class={props.imageClass} />
+    {/if}
   {/snippet}
 
   {#snippet next({ next, canScrollNext, a11y })}

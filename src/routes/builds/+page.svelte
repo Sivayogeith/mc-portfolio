@@ -7,6 +7,10 @@
         "This is the base I built in my Blaze and Caves server! (Traveled 25k blocks to find a Pale Oak!)",
       slides: [
         {
+          src: "https://sketchfab.com/models/112da0cf966d4428a641a15ad9358f04/embed",
+          alt: "ssmp pale oak base 3d model",
+        },
+        {
           src: "ssmpBacapBase.png",
           alt: "ssmp bacap base cover",
         },
@@ -41,6 +45,10 @@
       description:
         "This is the first base I ever built in minecraft, in my first server and world.",
       slides: [
+        {
+          src: "https://sketchfab.com/models/fdee7b9a482b4c0eba22a134325ff072/embed",
+          alt: "ssmp main base 1 3d model",
+        },
         {
           src: "ssmpMainBase.png",
           alt: "ssmp main base cover",
@@ -80,6 +88,10 @@
       description:
         "This is the second base I built near the server's community trading hall!",
       slides: [
+        {
+          src: "https://sketchfab.com/models/9c82ea595bfa4e8cb65cacf6ca6955c6/embed",
+          alt: "ssmp main base 1 3d model",
+        },
         {
           src: "ssmpMain2Base.png",
           alt: "ssmp main base cover",
@@ -128,13 +140,19 @@
           containerClass={"!min-h-auto !min-w-1/2 xl:w-full lm:w-1/2"}
           slideClass={"!p-0"}
           imageClass={"rounded-bl-none rounded-t-xl lm:rounded-l-xl lm:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl w-max"}
+          figureClass={"rounded-bl-none rounded-t-xl lm:rounded-l-xl lm:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl h-full w-full"}
           slides={build.slides}
           withGrabCursor={false}
         />
         <div class="flex flex-col gap-4 p-5">
-          <h1 class="text-xl text-blue-900 dark:text-emerald-500 hover:text-blue-950 dark:hover:text-emerald-600 font-bold">
-            {build.name}
-          </h1>
+          <div>
+            <h1
+              class="text-xl text-blue-900 dark:text-emerald-500 hover:text-blue-950 dark:hover:text-emerald-600 font-bold"
+            >
+              {build.name}
+            </h1>
+            <p class="text-sm">3D Model Available</p>
+          </div>
           <p class="text-lg">{build.description}</p>
         </div>
       </div>
