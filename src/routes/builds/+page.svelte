@@ -7,10 +7,6 @@
         "This is the base I built in my Blaze and Caves server! (Traveled 25k blocks to find a Pale Oak!)",
       slides: [
         {
-          src: "https://sketchfab.com/models/112da0cf966d4428a641a15ad9358f04/embed",
-          alt: "ssmp pale oak base 3d model",
-        },
-        {
           src: "ssmpBacapBase.png",
           alt: "ssmp bacap base cover",
         },
@@ -21,6 +17,10 @@
         {
           src: "ssmpBacapBase2.png",
           alt: "ssmp bacap base image 2",
+        },
+        {
+          src: "https://sketchfab.com/models/112da0cf966d4428a641a15ad9358f04/embed",
+          alt: "ssmp pale oak base 3d model",
         },
         {
           src: "ssmpBacapBase3.png",
@@ -46,16 +46,20 @@
         "This is the first base I ever built in minecraft, in my first server and world.",
       slides: [
         {
-          src: "https://sketchfab.com/models/fdee7b9a482b4c0eba22a134325ff072/embed",
-          alt: "ssmp main base 1 3d model",
-        },
-        {
           src: "ssmpMainBase.png",
           alt: "ssmp main base cover",
         },
         {
           src: "ssmpMainBase1.png",
           alt: "ssmp main base image 1",
+        },
+        {
+          src: "ssmpMainBase6.png",
+          alt: "ssmp main base image 6",
+        },
+        {
+          src: "https://sketchfab.com/models/fdee7b9a482b4c0eba22a134325ff072/embed",
+          alt: "ssmp main base 1 3d model",
         },
         {
           src: "ssmpMainBase2.png",
@@ -73,10 +77,7 @@
           src: "ssmpMainBase5.png",
           alt: "ssmp main base image 5",
         },
-        {
-          src: "ssmpMainBase6.png",
-          alt: "ssmp main base image 6",
-        },
+
         {
           src: "ssmpMainBase7.png",
           alt: "ssmp main base image 7",
@@ -89,16 +90,21 @@
         "This is the second base I built near the server's community trading hall!",
       slides: [
         {
-          src: "https://sketchfab.com/models/9c82ea595bfa4e8cb65cacf6ca6955c6/embed",
-          alt: "ssmp main base 1 3d model",
-        },
-        {
           src: "ssmpMain2Base.png",
           alt: "ssmp main base cover",
         },
         {
           src: "ssmpMain2Base1.png",
           alt: "ssmp main base 2 image 1",
+        },
+        {
+          src: "ssmpMain2Base7.png",
+          alt: "ssmp main base 2 image 7",
+        },
+
+        {
+          src: "https://sketchfab.com/models/9c82ea595bfa4e8cb65cacf6ca6955c6/embed",
+          alt: "ssmp main base 1 3d model",
         },
         {
           src: "ssmpMain2Base2.png",
@@ -119,10 +125,6 @@
         {
           src: "ssmpMain2Base6.png",
           alt: "ssmp main base 2 image 6",
-        },
-        {
-          src: "ssmpMain2Base7.png",
-          alt: "ssmp main base 2 image 7",
         },
       ],
     },
