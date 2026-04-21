@@ -4,6 +4,7 @@
   import { preloadSlides } from "$lib/common";
   import Carousel from "svelte-light-carousel";
   import type { ResponsiveProperty } from "svelte-light-carousel/types";
+  import { fade } from "svelte/transition";
 
   export interface Slide {
     src: string;
@@ -45,49 +46,51 @@
       <p class="text-2xl">Loading...</p>
     </div>
   {:then}
-    <Carousel {...props}>
-      {#snippet slide({ slide })}
-        {#if slide.src.startsWith("https://sketchfab.com")}
-          <iframe
-            title={slide.alt}
-            frameborder="0"
-            allowfullscreen
-            allow="autoplay; fullscreen; xr-spatial-tracking"
-            src={slide.src}
-            class={props.figureClass}
-          >
-          </iframe>
-        {:else}
-          <enhanced:img
-            src={slide.src}
-            alt={slide.alt}
-            class={props.imageClass}
-          />
-        {/if}
-      {/snippet}
+    <div in:fade>
+      <Carousel {...props}>
+        {#snippet slide({ slide })}
+          {#if slide.src.startsWith("https://sketchfab.com")}
+            <iframe
+              title={slide.alt}
+              frameborder="0"
+              allowfullscreen
+              allow="autoplay; fullscreen; xr-spatial-tracking"
+              src={slide.src}
+              class={props.figureClass}
+            >
+            </iframe>
+          {:else}
+            <enhanced:img
+              src={slide.src}
+              alt={slide.alt}
+              class={props.imageClass}
+            />
+          {/if}
+        {/snippet}
 
-      {#snippet next({ next, canScrollNext, a11y })}
-        <button
-          class={`absolute right-2 top-1/2 -translate-y-1/2 z-10 p-1.5 bg-blue-950/50 text-white dark:bg-emerald-200/50 dark:text-black rounded-full ${onlyOneSlide ? "hidden" : ""} ${
-            !canScrollNext ? "opacity-50 cursor-not-allowed" : ""
-          }`}
-          onclick={next}
-          {...a11y}
-        >
-          <ArrowRightIcon />
-        </button>
-      {/snippet}
-      {#snippet prev({ prev, canScrollPrev, a11y })}
-        <button
-          onclick={prev}
-          class={`absolute left-2 top-1/2 -translate-y-1/2 z-10 p-1.5 bg-blue-950/50 text-white dark:bg-emerald-200/50 dark:text-black rounded-full ${onlyOneSlide ? "hidden" : ""} ${
-            !canScrollPrev ? "opacity-50 cursor-not-allowed" : ""
-          }`}
-          {...a11y}
-        >
-          <ArrowLeftIcon />
-        </button>
-      {/snippet}
-    </Carousel>
+        {#snippet next({ next, canScrollNext, a11y })}
+          <button
+            class={`absolute right-2 top-1/2 -translate-y-1/2 z-10 p-1.5 bg-blue-950/50 text-white dark:bg-emerald-200/50 dark:text-black rounded-full ${onlyOneSlide ? "hidden" : ""} ${
+              !canScrollNext ? "opacity-50 cursor-not-allowed" : ""
+            }`}
+            onclick={next}
+            {...a11y}
+          >
+            <ArrowRightIcon />
+          </button>
+        {/snippet}
+        {#snippet prev({ prev, canScrollPrev, a11y })}
+          <button
+            onclick={prev}
+            class={`absolute left-2 top-1/2 -translate-y-1/2 z-10 p-1.5 bg-blue-950/50 text-white dark:bg-emerald-200/50 dark:text-black rounded-full ${onlyOneSlide ? "hidden" : ""} ${
+              !canScrollPrev ? "opacity-50 cursor-not-allowed" : ""
+            }`}
+            {...a11y}
+          >
+            <ArrowLeftIcon />
+          </button>
+        {/snippet}
+      </Carousel>
+    </div>
   {/await}
 </div>
