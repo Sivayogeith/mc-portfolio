@@ -1,10 +1,10 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import { preloadSlides } from "$lib/common";
+  import { preloadImage } from "$lib/common";
   import { Content, Modal, Trigger } from "sv-popup";
   import { useMediaQuery } from "svelte-breakpoints";
   import type { Readable } from "svelte/store";
-  import { fly } from "svelte/transition";
+
   const isDesktop: Readable<boolean> = useMediaQuery("(width >= 80rem)");
   const links = [
     {
@@ -34,7 +34,6 @@
 <div class="flex flex-col justify-center items-center xl:h-[93vh] xl:m-0 my-20">
   <h1 class="text-3xl text-center mb-20 sm:mx-5">
     sage's
-
     {#if $isDesktop}
       <Modal button={true}>
         <Content>
@@ -45,30 +44,39 @@
             class="h-full w-full border border-black/50 dark:border-white/50 rounded-2xl"
           ></iframe>
         </Content>
-        <Trigger>minecraft</Trigger></Modal
-      >{:else}minecraft
+        <Trigger>minecraft</Trigger>
+      </Modal>
+    {:else}
+      minecraft
     {/if}
     "portfolio"
   </h1>
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 sm:mx-10 mx-5">
     {#each links as link}
-      {#await preloadSlides([{src: link.image, alt: link.alt}]) then _}
       <button
         class="rounded-xl border border-blue-900 dark:border-emerald-500 hover:scale-105 xl:pb-5 flex xl:flex-col md:flex-row flex-col text-start"
         onclick={() => goto(link.href)}
-        in:fly
       >
-        <img
-          src={link.image}
-          alt={link.alt}
-          class="rounded-bl-none rounded-t-xl md:rounded-l-xl md:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl w-max md:w-1/2 xl:w-max"
-        />
+        <div
+          class="border border-x-0 border-t-0 border-b-blue-900 dark:border-b-emerald-500"
+        >
+          {#await preloadImage(link.image)}
+            <div class="flex justify-center items-center w-full h-82">
+              <p class="text-2xl">Loading...</p>
+            </div>
+          {:then}
+            <img
+              src={link.image}
+              alt={link.alt}
+              class="rounded-bl-none rounded-t-xl md:rounded-l-xl md:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl w-max md:w-1/2 xl:w-max"
+            />
+          {/await}
+        </div>
         <div class="flex flex-col gap-3 px-5 py-3 ws-10">
           <h1 class="text-2xl ws-10 text-bold">{link.name}</h1>
           <p class="text-lg">{link.description}</p>
         </div>
       </button>
-      {/await}
     {/each}
   </div>
 </div>

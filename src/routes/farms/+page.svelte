@@ -1,6 +1,4 @@
 <script>
-  import { preloadSlides } from "$lib/common";
-  import { fly } from "svelte/transition";
   import Carousel from "../../components/Carousel.svelte";
   const farms = [
     {
@@ -94,29 +92,26 @@
 <div class="flex flex-col justify-center items-center sm:m-5">
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 sm:mx-10 mx-5">
     {#each farms as farm}
-      {#await preloadSlides(farm.slides) then _}
-        <div
-          class="border border-blue-900 dark:border-emerald-500 rounded-xl xl:pb-5 flex xl:flex-col lm:flex-row flex-col"
-          in:fly
-        >
-          <Carousel
-            containerClass={"!min-h-auto !min-w-1/2 xl:w-full lm:w-1/2"}
-            slideClass={"!p-0"}
-            imageClass={"rounded-bl-none rounded-t-xl lm:rounded-l-xl lm:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl w-max"}
-            slides={farm.slides}
-            withGrabCursor={false}
-          />
-          <div class="flex flex-col gap-4 p-5">
-            <a
-              class="text-xl text-blue-900 dark:text-emerald-500 hover:text-blue-950 dark:hover:text-emerald-600 font-bold"
-              href={farm.link}
-            >
-              {farm.name}
-            </a>
-            <p class="text-lg">{farm.description}</p>
-          </div>
+      <div
+        class="border border-blue-900 dark:border-emerald-500 rounded-xl xl:pb-5 flex xl:flex-col lm:flex-row flex-col"
+      >
+        <Carousel
+          containerClass={"!min-h-auto !min-w-1/2 xl:w-full lm:w-1/2"}
+          slideClass={"!p-0"}
+          imageClass={"rounded-bl-none rounded-t-xl lm:rounded-l-xl lm:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl w-max"}
+          slides={farm.slides}
+          withGrabCursor={false}
+        />
+        <div class="flex flex-col gap-4 p-5">
+          <a
+            class="text-xl text-blue-900 dark:text-emerald-500 hover:text-blue-950 dark:hover:text-emerald-600 font-bold"
+            href={farm.link}
+          >
+            {farm.name}
+          </a>
+          <p class="text-lg">{farm.description}</p>
         </div>
-      {/await}
+      </div>
     {/each}
   </div>
 </div>
