@@ -4,7 +4,7 @@
   import Carousel from "svelte-light-carousel";
   import type { ResponsiveProperty } from "svelte-light-carousel/types";
 
-  interface Slide {
+  export interface Slide {
     src: string;
     alt: string;
   }

@@ -1,27 +1,29 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
+  import { preloadSlides } from "$lib/common";
   import { Content, Modal, Trigger } from "sv-popup";
   import { useMediaQuery } from "svelte-breakpoints";
   import type { Readable } from "svelte/store";
+  import { fly } from "svelte/transition";
   const isDesktop: Readable<boolean> = useMediaQuery("(width >= 80rem)");
   const links = [
     {
       name: "my builds and bases",
-      image: "/ssmpBacapBase.webp",
+      image: "ssmpBacapBase.webp",
       href: "/builds",
       alt: "my builds and bases cover",
       description: "bases and builds that I made in minecraft!",
     },
     {
       name: "my mods and packs",
-      image: "/riceMod.webp",
+      image: "riceMod.webp",
       href: "/mods",
       alt: "my mods and packs cover",
       description: "mods and resource packs that I coded!",
     },
     {
       name: "my favorite farms",
-      image: "/endermenFarm.webp",
+      image: "endermenFarm.webp",
       href: "/farms",
       alt: "my favorite farms cover",
       description: "list of my favorite farms!",
@@ -50,9 +52,11 @@
   </h1>
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 sm:mx-10 mx-5">
     {#each links as link}
+      {#await preloadSlides([{src: link.image, alt: link.alt}]) then _}
       <button
         class="rounded-xl border border-blue-900 dark:border-emerald-500 hover:scale-105 xl:pb-5 flex xl:flex-col md:flex-row flex-col text-start"
         onclick={() => goto(link.href)}
+        in:fly
       >
         <img
           src={link.image}
@@ -64,6 +68,7 @@
           <p class="text-lg">{link.description}</p>
         </div>
       </button>
+      {/await}
     {/each}
   </div>
 </div>
