@@ -7,15 +7,15 @@
         "This is the base I built in my Blaze and Caves server! (Traveled 25k blocks to find a Pale Oak!)",
       slides: [
         {
-          src: "ssmpBacapBase.png",
+          src: "ssmpBacapBase.webp",
           alt: "ssmp bacap base cover",
         },
         {
-          src: "ssmpBacapBase1.png",
+          src: "ssmpBacapBase1.webp",
           alt: "ssmp bacap base image 1",
         },
         {
-          src: "ssmpBacapBase2.png",
+          src: "ssmpBacapBase2.webp",
           alt: "ssmp bacap base image 2",
         },
         {
@@ -23,19 +23,19 @@
           alt: "ssmp pale oak base 3d model",
         },
         {
-          src: "ssmpBacapBase3.png",
+          src: "ssmpBacapBase3.webp",
           alt: "ssmp bacap base image 3",
         },
         {
-          src: "ssmpBacapBase4.png",
+          src: "ssmpBacapBase4.webp",
           alt: "ssmp bacap base image 4",
         },
         {
-          src: "ssmpBacapBase5.png",
+          src: "ssmpBacapBase5.webp",
           alt: "ssmp bacap base image 5",
         },
         {
-          src: "ssmpBacapBase6.png",
+          src: "ssmpBacapBase6.webp",
           alt: "ssmp bacap base image 6",
         },
       ],
@@ -46,15 +46,15 @@
         "This is the first base I ever built in minecraft, in my first server and world.",
       slides: [
         {
-          src: "ssmpMainBase.png",
+          src: "ssmpMainBase.webp",
           alt: "ssmp main base cover",
         },
         {
-          src: "ssmpMainBase1.png",
+          src: "ssmpMainBase1.webp",
           alt: "ssmp main base image 1",
         },
         {
-          src: "ssmpMainBase6.png",
+          src: "ssmpMainBase6.webp",
           alt: "ssmp main base image 6",
         },
         {
@@ -62,24 +62,24 @@
           alt: "ssmp main base 1 3d model",
         },
         {
-          src: "ssmpMainBase2.png",
+          src: "ssmpMainBase2.webp",
           alt: "ssmp main base image 2",
         },
         {
-          src: "ssmpMainBase3.png",
+          src: "ssmpMainBase3.webp",
           alt: "ssmp main base image 3",
         },
         {
-          src: "ssmpMainBase4.png",
+          src: "ssmpMainBase4.webp",
           alt: "ssmp main base image 4",
         },
         {
-          src: "ssmpMainBase5.png",
+          src: "ssmpMainBase5.webp",
           alt: "ssmp main base image 5",
         },
 
         {
-          src: "ssmpMainBase7.png",
+          src: "ssmpMainBase7.webp",
           alt: "ssmp main base image 7",
         },
       ],
@@ -90,15 +90,15 @@
         "This is the second base I built near the server's community trading hall!",
       slides: [
         {
-          src: "ssmpMain2Base.png",
+          src: "ssmpMain2Base.webp",
           alt: "ssmp main base cover",
         },
         {
-          src: "ssmpMain2Base1.png",
+          src: "ssmpMain2Base1.webp",
           alt: "ssmp main base 2 image 1",
         },
         {
-          src: "ssmpMain2Base7.png",
+          src: "ssmpMain2Base7.webp",
           alt: "ssmp main base 2 image 7",
         },
 
@@ -107,23 +107,23 @@
           alt: "ssmp main base 1 3d model",
         },
         {
-          src: "ssmpMain2Base2.png",
+          src: "ssmpMain2Base2.webp",
           alt: "ssmp main base 2 image 2",
         },
         {
-          src: "ssmpMain2Base3.png",
+          src: "ssmpMain2Base3.webp",
           alt: "ssmp main base 2 image 3",
         },
         {
-          src: "ssmpMain2Base4.png",
+          src: "ssmpMain2Base4.webp",
           alt: "ssmp main base 2 image 4",
         },
         {
-          src: "ssmpMain2Base5.png",
+          src: "ssmpMain2Base5.webp",
           alt: "ssmp main base 2 image 5",
         },
         {
-          src: "ssmpMain2Base6.png",
+          src: "ssmpMain2Base6.webp",
           alt: "ssmp main base 2 image 6",
         },
       ],

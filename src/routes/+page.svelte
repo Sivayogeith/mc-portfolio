@@ -7,21 +7,21 @@
   const links = [
     {
       name: "my builds and bases",
-      image: "/ssmpBacapBase.png",
+      image: "/ssmpBacapBase.webp",
       href: "/builds",
       alt: "my builds and bases cover",
       description: "bases and builds that I made in minecraft!",
     },
     {
       name: "my mods and packs",
-      image: "/riceMod.png",
+      image: "/riceMod.webp",
       href: "/mods",
       alt: "my mods and packs cover",
       description: "mods and resource packs that I coded!",
     },
     {
       name: "my favorite farms",
-      image: "/endermenFarm.png",
+      image: "/endermenFarm.webp",
       href: "/farms",
       alt: "my favorite farms cover",
       description: "list of my favorite farms!",

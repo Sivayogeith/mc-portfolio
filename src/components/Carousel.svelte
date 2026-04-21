@@ -49,7 +49,7 @@
       >
       </iframe>
     {:else}
-      <img src={slide.src} alt={slide.alt} class={props.imageClass} />
+        <enhanced:img src={slide.src} alt={slide.alt} class={props.imageClass} />
     {/if}
   {/snippet}
 

@@ -8,23 +8,23 @@
       link: "https://www.youtube.com/watch?v=jn8C8uY3fHM",
       slides: [
         {
-          src: "endermenFarm.png",
+          src: "endermenFarm.webp",
           alt: "endermen farm cover",
         },
         {
-          src: "endermenFarm1.png",
+          src: "endermenFarm1.webp",
           alt: "endermen farm image 1",
         },
         {
-          src: "endermenFarm2.png",
+          src: "endermenFarm2.webp",
           alt: "endermen farm image 2",
         },
         {
-          src: "endermenFarm3.png",
+          src: "endermenFarm3.webp",
           alt: "endermen farm image 3",
         },
         {
-          src: "endermenFarm4.png",
+          src: "endermenFarm4.webp",
           alt: "endermen farm image 4",
         },
       ],
@@ -36,23 +36,23 @@
       link: "https://www.youtube.com/watch?v=icbCWOybI80",
       slides: [
         {
-          src: "ironFarm.png",
+          src: "ironFarm.webp",
           alt: "iron farm cover",
         },
         {
-          src: "ironFarm1.png",
+          src: "ironFarm1.webp",
           alt: "iron farm image 1",
         },
         {
-          src: "ironFarm2.png",
+          src: "ironFarm2.webp",
           alt: "iron farm image 2",
         },
         {
-          src: "ironFarm3.png",
+          src: "ironFarm3.webp",
           alt: "iron farm image 3",
         },
         {
-          src: "ironFarm4.png",
+          src: "ironFarm4.webp",
           alt: "iron farm image 4",
         },
       ],
@@ -64,23 +64,23 @@
       link: "https://www.youtube.com/watch?v=icbCWOybI80",
       slides: [
         {
-          src: "villagerFarm.png",
+          src: "villagerFarm.webp",
           alt: "villager farm cover",
         },
         {
-          src: "villagerFarm1.png",
+          src: "villagerFarm1.webp",
           alt: "villager farm image 1",
         },
         {
-          src: "villagerFarm2.png",
+          src: "villagerFarm2.webp",
           alt: "villager farm image 2",
         },
         {
-          src: "villagerFarm3.png",
+          src: "villagerFarm3.webp",
           alt: "villager farm image 3",
         },
         {
-          src: "villagerFarm4.png",
+          src: "villagerFarm4.webp",
           alt: "villager farm image 4",
         },
       ],

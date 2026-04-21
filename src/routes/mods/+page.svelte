@@ -7,7 +7,7 @@
       link: "https://modrinth.com/mod/rice-mod",
       slides: [
         {
-          src: "riceMod.png",
+          src: "riceMod.webp",
           alt: "rice mod cover",
         },
       ],
@@ -19,7 +19,7 @@
       link: "https://modrinth.com/resourcepack/unstable-music",
       slides: [
         {
-          src: "unstableMusicPack.png",
+          src: "unstableMusicPack.webp",
           alt: "unstable music pack working",
         },
       ],
@@ -30,7 +30,7 @@
       link: "https://modrinth.com/mod/gobble-felixs-rats",
       slides: [
         {
-          src: "gobbleFelixRatsMod.png",
+          src: "gobbleFelixRatsMod.webp",
           alt: "gobble felixs rats mod works",
         },
       ],
