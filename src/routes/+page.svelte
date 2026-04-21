@@ -4,6 +4,7 @@
   import { Content, Modal, Trigger } from "sv-popup";
   import { useMediaQuery } from "svelte-breakpoints";
   import type { Readable } from "svelte/store";
+  import { fade } from "svelte/transition";
 
   const isDesktop: Readable<boolean> = useMediaQuery("(width >= 80rem)");
   const links = [
@@ -69,6 +70,7 @@
               src={link.image}
               alt={link.alt}
               class="rounded-bl-none rounded-t-xl md:rounded-l-xl md:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl w-max md:w-1/2 xl:w-max"
+              in:fade
             />
           {/await}
         </div>
