@@ -11,7 +11,7 @@
   import PlayingIcon from "$lib/PlayingIcon.svelte";
 
   let { children } = $props();
-  // let bgAudio: HTMLAudioElement = $state();
+
   let bgAudioTime: number = $state(166);
   let bgAudioPaused: boolean = $state(true);
   let theme = $state("");
@@ -39,7 +39,7 @@
 
 <div class="pt-5 flex flex-col sm:flex-row justify-between w-full pb-5 sm:pb-0">
   <div class="w-1/4">
-    <audio bind:paused={bgAudioPaused} bind:currentTime={bgAudioTime}>
+    <audio bind:paused={bgAudioPaused} bind:currentTime={bgAudioTime} loop>
       <source src={ariaMath} type="audio/ogg" />
     </audio>
   </div>
@@ -73,4 +73,9 @@
     </button>
   </div>
 </div>
-{@render children()}
+<div class="min-h-[87vh]">
+  {@render children()}
+</div>
+<footer class="text-center py-5 text-lg">
+  by sage with :3
+</footer>

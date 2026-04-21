@@ -31,7 +31,7 @@
   ];
 </script>
 
-<div class="flex flex-col justify-center items-center xl:h-[93vh] xl:m-0 my-20">
+<div class="flex flex-col justify-center items-center xl:h-[87vh] xl:m-0 my-20">
   <h1 class="text-3xl text-center mb-20 sm:mx-5">
     sage's
     {#if $isDesktop}
