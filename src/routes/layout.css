@@ -26,5 +26,5 @@
 }
 
 .border-bottom {
-  @apply border border-x-0 lm:border-r lm:border-b-0 border-t-0 border-b-blue-900 dark:border-b-emerald-500 lm:border-r-blue-900 lm:dark:border-r-emerald-500
+  @apply border border-x-0 border-t-0 border-b-blue-900 dark:border-b-emerald-500 lm:border-b-0 lm:border-r lm:border-r-blue-900 lm:dark:border-r-emerald-500 xl:border-r-0 xl:border-b
 }

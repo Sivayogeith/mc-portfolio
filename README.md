@@ -14,3 +14,6 @@
 - **Dark Mode**
 - **Background Music** (Aria Math!)
 - **Preloading Images**
+
+### AI Declaration
+**I did NOT use a single drop of AI for this project. Some parts MIGHT seem like AI but thats just my design style!**
