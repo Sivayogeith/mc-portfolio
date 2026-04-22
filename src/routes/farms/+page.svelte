@@ -93,14 +93,11 @@
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 sm:mx-10 mx-5">
     {#each farms as farm}
       <div
-        class="border border-blue-900 dark:border-emerald-500 rounded-xl xl:pb-5 flex xl:flex-col lm:flex-row flex-col"
+        class="card"
       >
         <Carousel slides={farm.slides} />
         <div class="flex flex-col gap-4 p-5">
-          <a
-            class="text-xl text-blue-900 dark:text-emerald-500 hover:text-blue-950 dark:hover:text-emerald-600 font-bold"
-            href={farm.link}
-          >
+          <a class="card-header" href={farm.link}>
             {farm.name}
           </a>
           <p class="text-lg">{farm.description}</p>

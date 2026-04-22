@@ -28,3 +28,15 @@
 .border-bottom {
   @apply border border-x-0 border-t-0 border-b-blue-900 dark:border-b-emerald-500 lm:border-b-0 lm:border-r lm:border-r-blue-900 lm:dark:border-r-emerald-500 xl:border-r-0 xl:border-b
 }
+
+.card {
+  @apply border border-blue-900 dark:border-emerald-500 rounded-xl xl:pb-5 flex xl:flex-col lm:flex-row flex-col
+}
+
+.card-header{
+  @apply text-xl text-blue-900 dark:text-emerald-500 hover:text-blue-950 dark:hover:text-emerald-600 font-bold
+}
+
+.button-circle {
+  @apply dark:bg-emerald-500 bg-blue-900 dark:text-black text-white rounded-full p-2 self-end w-full sm:w-auto flex sm:inline justify-center
+}

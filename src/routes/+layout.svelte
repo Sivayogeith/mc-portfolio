@@ -53,7 +53,7 @@
   <div class="w-full sm:w-1/4 flex sm:block gap-5 px-5 sm:ps-0 text-end">
     <button
       onclick={() => (bgAudioPaused = !bgAudioPaused)}
-      class="dark:bg-emerald-500 bg-blue-900 dark:text-black text-white rounded-full p-2 self-end w-full sm:w-auto flex sm:inline justify-center"
+      class="button-circle"
     >
       {#if bgAudioPaused}
         <PausedIcon />
@@ -63,7 +63,7 @@
     </button>
     <button
       onclick={() => (theme = theme == "dark" ? "light" : "dark")}
-      class="dark:bg-emerald-500 bg-blue-900 dark:text-black text-white rounded-full p-2 self-end w-full sm:w-auto flex sm:inline justify-center"
+      class="button-circle"
     >
       {#if theme == "dark"}
         <SunIcon />
@@ -76,6 +76,4 @@
 <div class="min-h-[87vh]">
   {@render children()}
 </div>
-<footer class="text-center py-5 text-lg">
-  by sage with :3
-</footer>
+<footer class="text-center py-5 text-lg">by sage with :3</footer>

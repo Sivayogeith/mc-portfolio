@@ -1,6 +1,6 @@
 <script lang="ts">
   import { goto } from "$app/navigation";
-  import { preloadImage } from "$lib/common";
+  import { imageClass, preloadImage } from "$lib/common";
   import { Content, Modal, Trigger } from "sv-popup";
   import { useMediaQuery } from "svelte-breakpoints";
   import type { Readable } from "svelte/store";
@@ -55,7 +55,7 @@
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 sm:mx-10 mx-5">
     {#each links as link}
       <button
-        class="rounded-xl border border-blue-900 dark:border-emerald-500 hover:scale-105 xl:pb-5 flex xl:flex-col md:flex-row flex-col text-start"
+        class="card hover:scale-105 text-start"
         onclick={() => goto(link.href)}
       >
         {#await preloadImage(link.image)}
@@ -68,7 +68,7 @@
           <img
             src={link.image}
             alt={link.alt}
-            class="rounded-bl-none rounded-t-xl md:rounded-l-xl md:rounded-r-none xl:rounded-bl-none xl:rounded-t-xl w-max md:w-1/2 xl:w-max border-bottom"
+            class={imageClass + "w-max lm:w-1/2 xl:w-max"}
             in:fade
           />
         {/await}

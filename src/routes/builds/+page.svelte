@@ -135,15 +135,11 @@
 <div class="flex flex-col justify-center items-center sm:m-5">
   <div class="grid xl:grid-cols-3 grid-cols-1 gap-5 sm:mx-10 mx-5">
     {#each builds as build}
-      <div
-        class="border border-blue-900 dark:border-emerald-500 rounded-xl xl:pb-5 flex xl:flex-col lm:flex-row flex-col"
-      >
+      <div class="card">
         <Carousel slides={build.slides} />
         <div class="flex flex-col gap-4 p-5">
           <div>
-            <h1
-              class="text-xl text-blue-900 dark:text-emerald-500 hover:text-blue-950 dark:hover:text-emerald-600 font-bold"
-            >
+            <h1 class="card-header">
               {build.name}
             </h1>
             <p class="text-sm">3D Model Available</p>
