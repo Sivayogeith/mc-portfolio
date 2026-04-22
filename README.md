@@ -10,7 +10,7 @@
 ### Features
 - **3D Models** of my bases and builds
 - **Responsive** for all devices
-- **Classic Minecraft** inside the website (Easter Egg!)
+- **Classic Minecraft** inside the website (click on the minecraft in home page on desktop!)
 - **Dark Mode**
 - **Background Music** (Aria Math!)
 - **Preloading Images**
