@@ -68,7 +68,7 @@
           <img
             src={link.image}
             alt={link.alt}
-            class={imageClass + "w-max lm:w-1/2 xl:w-max"}
+            class={imageClass + " lm:w-1/2 xl:w-full"}
             in:fade
           />
         {/await}
